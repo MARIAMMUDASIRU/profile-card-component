@@ -1,12 +1,14 @@
 /* CUSTOM PROPERTIES 
 -------------------------------*/
 :root {
-  --background-image: url("https://i.pinimg.com/1200x/45/98/e8/4598e877baf13c0f5b1889d07f8fad42.jpg");
+  --background-image: url("https://i.pinimg.com/736x/4d/f1/eb/4df1ebdeb7ad6e38e244055470bd2321.jpg");
   --pinkbeige: #f0e2da;
   --lightbrown: #c68766;
+  --black: #000000;
   --image: var(--background-image);
   --color-light: var(--pinkbeige);
   --color-dark: var(--lightbrown);
+  --color-black: var(--black);
 }
 
 /* Global Styles 
@@ -47,7 +49,7 @@ header {
 p {
   text-align: center;
   margin-top: -10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--color-black);
   font-size: 25px;
 }
 h1 {
@@ -67,9 +69,10 @@ img {
   margin-bottom: -100px;
 }
 .age {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
-  margin-top: -20px;
+  margin-top: 7px;
+  margin-bottom: 5px;
 }
 
 .stats-container {
@@ -83,10 +86,15 @@ img {
 .stat-label {
   display: flex;
   text-align: center;
-  width: 100px;
   flex-direction: column;
 }
 .stat-number {
   font-size: 25px;
   font-weight: 700;
+}
+.name-age {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
